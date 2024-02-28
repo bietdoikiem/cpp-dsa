@@ -32,7 +32,7 @@ string largestPalindromic(string num) {
         freq[num[i]-'0']++;
     }
     priority_queue<pair<char, int>, vector<pair<char, int>>> pq;
-    priority_queue<char> pqOne;
+    char largestOdd = '\0';
     for (int i = 0; i < 10; i++) {
         if (freq[i] == 0) continue;
         pq.push({i+'0', freq[i]});
@@ -50,14 +50,16 @@ string largestPalindromic(string num) {
             for (int i = 0; i < (f-1)/2; i++) {
                 ans.push_back(c);
             }
-            pqOne.push(c);
+            if (c > largestOdd) {
+                largestOdd = c;
+            }         
         }
     }
     ans.erase(0, ans.find_first_not_of('0'));
     string rev = ans;
     reverse(rev.begin(), rev.end());
-    if (!pqOne.empty()) {
-        ans.push_back(pqOne.top());
+    if (largestOdd != '\0') {
+        ans.push_back(largestOdd);
     }
     if (ans == "") return "0";
     ans += rev; // Symmetric palindromic structure
