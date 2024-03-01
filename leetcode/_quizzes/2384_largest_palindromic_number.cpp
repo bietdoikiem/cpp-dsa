@@ -11,7 +11,7 @@ using namespace std;
 //
 // +Output:
 // "7449447"
-// 
+//
 // Thought process:
 // 1. How we maintain larger number in order here?
 // - A Palindrome is comprised of whether even frequencies of characters, or even freq + one odd (largest odd is preferred here)
@@ -55,7 +55,7 @@ string largestPalindromic(string num) {
             }
             if (c > largestOdd) {
                 largestOdd = c;
-            }         
+            }
         }
     }
 

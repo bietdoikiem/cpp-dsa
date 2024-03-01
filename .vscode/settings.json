@@ -4,6 +4,7 @@
     "*.html": "html",
     "*.env.*": "env",
     "**.service.ts": "typescript",
-    "iostream": "cpp"
+    "iostream": "cpp",
+    "*.tcc": "cpp"
   }
 }
