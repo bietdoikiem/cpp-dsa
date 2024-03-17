@@ -5,6 +5,7 @@
     "*.env.*": "env",
     "**.service.ts": "typescript",
     "iostream": "cpp",
-    "*.tcc": "cpp"
+    "*.tcc": "cpp",
+    "ostream": "cpp"
   }
 }
