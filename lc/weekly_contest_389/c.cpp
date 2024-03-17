@@ -18,6 +18,7 @@ int fn(auto& dp, auto& cnt, int& k, int i, int j) {
     }
     return dp[i][j];
 }
+
 int minimumDeletions(string word, int k) {
     vector<int> cnt(26, 0);
     for (int i = 0; i < word.size(); i++) {
