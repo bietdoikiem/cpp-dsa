@@ -14,7 +14,7 @@ public:
 
     FenwickTree(int _size) {
         size = _size;
-        tree.assign(size, 0);
+        tree = vector<T>(size + 1, 0);
     }
 
     int query(int idx) {
