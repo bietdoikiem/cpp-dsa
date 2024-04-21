@@ -9,7 +9,7 @@ public:
         __preprocess(nums);
     }
 
-    // Space & Time: O(N*LogN)
+    // Space & Time: O(N*LogN) -> The Power of Two!
     void __preprocess(vector<int>& nums) {
         // Find the minimum of elements from a window of 1,2,4,8... (power of 2)
         int n = (int) nums.size();
